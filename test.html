@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safety Course Test - shaneCore_systems</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="overlay"></div>
+    <header>
+        <div class="logo-container">
+            <img src="https://assets.onecompiler.app/43af7ep2e/43axpe9s6/IMG-20250305-WA0031.jpg" alt="shaneCore_systems Logo" class="logo-image">
+            <h1>shaneCore_systems</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Safety Course Test</h2>
+        <form id="test-form">
+            <div class="question" id="q1">
+                <label>1. What is the primary goal of workplace safety?</label>
+                <div class="options">
+                    <label><input type="radio" name="q1" value="A"> A) To increase production speed</label>
+                    <label><input type="radio" name="q1" value="B"> B) To ensure a safe and healthy work environment</label>
+                    <label><input type="radio" name="q1" value="C"> C) To reduce operational costs</label>
+                    <label><input type="radio" name="q1" value="D"> D) To minimize workplace disputes</label>
+                </div>
+                <div class="navigation">
+                    <button type="button" onclick="nextQuestion('q1', 'q2')">Next</button>
+                </div>
+            </div>
+            <div class="question" id="q2" style="display:none;">
+                <label>2. Which of the following is a key regulatory body in workplace safety in the U.S.?</label>
+                <div class="options">
+                    <label><input type="radio" name="q2" value="A"> A) EPA</label>
+                    <label><input type="radio" name="q2" value="B"> B) OSHA</label>
+                    <label><input type="radio" name="q2" value="C"> C) FDA</label>
+                    <label><input type="radio" name="q2" value="D"> D) FCC</label>
+                </div>
+                <div class="navigation">
+                    <button type="button" onclick="prevQuestion('q2', 'q1')">Prev</button>
+                    <button type="button" onclick="nextQuestion('q2', 'q3')">Next</button>
+                </div>
+            </div>
+            <div class="question" id="q3" style="display:none;">
+                <label>3. Which of these is not a type of Personal Protective Equipment (PPE)?</label>
+                <div class="options">
+                    <label><input type="radio" name="q3" value="A"> A) Gloves</label>
+                    <label><input type="radio" name="q3" value="B"> B) Safety glasses</label>
+                    <label><input type="radio" name="q3" value="C"> Air conditioning units</label>
+                    <label><input type="radio" name="q3" value="D"> D) Respirators</label>
+                </div>
+                <div class="navigation">
+                    <button type="button" onclick="prevQuestion('q3', 'q2')">Prev</button>
+                    <button type="button" onclick="nextQuestion('q3', 'q4')">Next</button>
+                </div>
+            </div>
+            <div class="question" id="q4" style="display:none;">
+                <label>4. What is the first step in a typical risk assessment process?</label>
+                <div class="options">
+                    <label><input type="radio" name="q4" value="A"> A) Identifying hazards</label>
+                    <label><input type="radio" name="q4" value="B"> B) Implementing control measures</label>
+                    <label><input type="radio" name="q4" value="C"> Conducting a risk analysis</label>
+                    <label><input type="radio" name="q4" value="D"> Reporting the findings</label>
+                </div>
+                <div class="navigation">
+                    <button type="button" onclick="prevQuestion('q4', 'q3')">Prev</button>
+                    <button type="button" onclick="nextQuestion('q4', 'q5')">Next</button>
+                </div>
+            </div>
+            <div class="question" id="q5" style="display:none;">
+                <label>5. In the case of a fire, what should you do first?</label>
+                <div class="options">
+                    <label><input type="radio" name="q5" value="A"> A) Use a fire extinguisher immediately</label>
+                    <label><input type="radio" name="q5" value="B"> B) Evacuate the building</label>
+                    <label><input type="radio" name="q5" value="C"> Call emergency services</label>
+                    <label><input type="radio" name="q5" value="D"> Search for the fire exit</label>
+                </div>
+                <div class="navigation">
+                    <button type="button" onclick="prevQuestion('q5', 'q4')">Prev</button>
+                    <button type="button" onclick="nextQuestion('q5', 'q6')">Next</button>
+                </div>
+            </div>
+            <div class="question" id="q6" style="display:none;">
+                <label>6. When working with hazardous chemicals, what is the best practice?</label>
+                <div class="options">
+                    <label><input type="radio" name="q6" value="A"> A) Wear the appropriate PPE</label>
+                    <label><input type="radio" name="q6" value="B"> B) Store chemicals anywhere</label>
+                    <label><input type="radio" name="q6" value="C"> Mix chemicals freely</label>
+                    <label><input type="radio" name="q6" value="D"> Ignore safety data sheets (SDS)</label>
+                </div>
+                <div class="navigation">
+                    <button type="button" onclick="prevQuestion('q6', 'q5')">Prev</button>
+                    <button type="button" onclick="nextQuestion('q6', 'q7')">Next</button>
+                </div>
+            </div>
+            <div class="question" id="q7" style="display:none;">
+                <label>7. Which of the following is a safety measure when working with electrical equipment?</label>
+                <div class="options">
+                    <label><input type="radio" name="q7" value="A"> A) Keep electrical equipment dry</label>
+                    <label><input type="radio" name="q7" value="B"> B) Use metal tools to handle wiring</label>
+                    <label><input type="radio" name="q7" value="C"> Overload circuits for higher power</label>
+                    <label><input type="radio" name="q7" value="D"> Remove ground prongs from plugs</label>
+                </div>
+                <div class="navigation">
+                    <button type="button" onclick="prevQuestion('q7', 'q6')">Prev</button>
+                    <button type="button" onclick
